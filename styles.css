@@ -1,30 +1,78 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(84, 13, 102);
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-}
-  
-li {
-    float: left;
+body{
+  font-family: sans-serif;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+header{
+  height: 500px;
+  padding: 20px;
+  background-image: linear-gradient(to bottom right, #5c1134, #b61212);
+  border-radius: 10px;
+  margin: 20px 100px;
 }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: rgb(66, 13, 82);
-  }
-  .active {
-    background-color: #b620db;
-  }
+
+h1{
+  text-align: center;
+  margin: 30px;
+}
+
+.about {
+  display: flex;
+  text-justify: auto;
+}
+
+.presentation{
+  font-size: 18px;
+  border-radius: 15px;
+  background-color: #443A3A;
+}
+
+.about img{
+  margin-top: 25px;
+  max-width: 120px;
+  max-height: 180px;
+  border-radius: 7px;
+}
+
+header div{
+  flex: 0 1 250px;
+  text-align: center; 
+  justify-content: center;
+  padding: 0 50px;
+}
+
+main{
+  background-image: linear-gradient(to bottom left, #A91010, #6c10a9);
+  text-align: center;
+}
+
+footer{
+  padding: 30px;
+  background-image: linear-gradient(purple,#A91010);
+  margin: 60px auto;
+  text-align: center;
+}
+
+nav {
+  margin: 40px;
+}
+
+nav ul{
+  list-style-type: none;
+  display: grid;
+  grid-gap: 40px 40px;
+  grid-template-columns: auto auto;
+  padding: 0;
+}
+
+li{
+  font-size: 10px;
+  line-height: 19px;
+  background-color: rgb(136, 21, 44);
+  padding: 10px;
+  border-radius: 10px;
+}
