@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="author">Charlie Charlie</h1>
+        <h1 class="page-title">
+            Conversor de moedas
+        </h1>
+        <p class="page-subtitle">
+            Descubra os valores em outas moedas
+        </p>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+            class="page-logo" alt=""><br><br>
+        <label>Insira o valor</label><br>
+        <input type="number" id="valor" size="2" placeholder="0.00 U$" /><br>
+        <label for="moeda">moeda</label>
+        <select id="moeda" name="moeda">
+            <option value="BRL" selected>Real</option>
+            <option value="EUR">Euro</option>
+            <option value="JPY">Iene</option>
+        </select><br>
+        <button type="submit" onclick="Convert(valor.value,moeda.value)">Converter</button>
+        <h2 id="valorConvertido"></h2>
+        <h2 id="valueBTC" class="BTC"></h2>
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        <script src="app.js"></script>
+</body>
+
+</html>

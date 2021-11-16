@@ -1,0 +1,92 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color:#ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color:#ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.notas{
+  font-size: 20px;
+  text-align: center;
+  color: crimson;
+  background-color: none;
+  width: 400px;
+  margin: auto;
+}
+
+input {
+  padding: 10px;
+  width: 300px;
+  margin: 5px 20px;
+  border: 4px solid #555;
+  text-align: center;
+  border-radius: 10px;
+}
+
+input[type=text]:focus {
+  border: 4px solid red;
+  border-radius: 20px;
+  color: red;
+  font-size: 20px;
+}
+
+::placeholder{
+  font-size: 20px;
+}
+
+.temperatura{
+  font-size: 20px;
+  text-align: center;
+  color: #FF1493;
+  background-color: none-;
+  width: 400px;
+  margin: 100px auto;
+}
+
+input[type=button]{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+.aprovado{
+  color: green;
+}
+
+.reprovado{
+  color: red;
+}
+
+.responseTemp{
+  color: blue;
+}

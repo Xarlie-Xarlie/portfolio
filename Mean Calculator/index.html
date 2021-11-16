@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title> Imersão Dev Alura - Aula 01</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-title">
+            Calculadora de média</h1>
+        <p class="page-subtitle">
+            Descubra qual a sua média de nota de todas as provas!
+        </p>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+            class="page-logo" alt="">
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+    <div class="notas">
+        <p>Insira as notas</p>
+        <form>
+            <input placeholder="Nota 1" id="nota1" name="nota1" type="number" step="0.5" min="0" max="10" value=""><br>
+            <input placeholder="Nota 2" type="number" id="nota2" name="nota2" step="0.5" min="0" max="10" value=""><br>
+            <input placeholder="Nota 3" type="number" id="nota3" name="nota3" step="0.5" min="0" max="10" value=""><br>
+            <input type="button" value="Calcular Média" onclick="calcular(nota1.value,nota2.value,nota3.value)"
+                id="botao">
+        </form>
+        <p id="responseNota" class="aprovado"></p>
+    </div>
+
+    <div class="temperatura"> Insira a Temperatura a ser convertida
+        <form>
+            <label for="temp1" class="label"> Converter de </label>
+            <select id="temp1" name="temp1">
+                <option value="kelvin">Kelvin</option>
+                <option value="celsius" selected>Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+
+            <label for="temp2"> para </label>
+            <select id="temp2" name="temp2">
+                <option value="kelvin">Kelvin</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit" selected>Fahrenheit</option>
+            </select>
+
+            <input placeholder="Temperatura" id="temp" name="temperatura" type="text" value=""><br>
+            <input type="button" value="Converter Temperatura" onclick="converter(temp1.value,temp2.value,temp.value)"
+                id="botao">
+        </form>
+        <p id="responseTemp" class="responseTemp"> </p>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

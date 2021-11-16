@@ -1,0 +1,111 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-04-aluraflix-e-filmes.png");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+body > img {
+  margin: 0 10px;
+}
+
+
+
+.pictures img{
+  border: solid 2px darksalmon;
+  border-radius: 30px;
+  margin: 20px;
+  width: 300px;
+  height: 440px;
+  transition: 0.5s;
+  opacity: 0.3;
+}
+
+.pictures img:hover{
+  width: 350px;
+  height: 470px;
+  opacity: 1;
+}
+
+label{
+  text-align: center;
+  font-size: 42px;
+  color: rgb(226, 219, 190);
+}
+
+input{
+  font: bold;
+  font-size: 20px;
+  font-family: Sans-serif;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 300px;  
+}
+
+::placeholder{
+  color: rgb(255, 255, 255);
+}
+
+input[type=text]{
+  width: 200px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: rgb(134, 90, 20);
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 10px;
+  transition: width 0.4s ease-in-out;
+}
+
+
+input[type=text]:focus{  
+  width: 500px;
+  background-color: rgb(158, 136, 65);
+}
+
+input[type=button]:hover{
+  background-color: rgb(77, 41, 12);
+  color: #fcfcfc;
+  box-shadow: 0 12px 16px 0 rgba(99, 91, 19, 0.6), 0 17px 50px 0 rgba(53, 83, 36, 0.3);
+}
+
+input[type=button]{
+  background-color: #ffffff;
+  transition-duration: 0.6s;
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+}
+
+
